@@ -8,7 +8,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/res.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"> </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <title>Vo Thi Minh Thuc</title>
     </head>
 <body>
@@ -19,56 +24,62 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 <div class="menu-bar">
                     <span></span>
                 </div>
-                <div class="menu-items">
-                    <ul>
-                        <li class="menu-items"><a href=" ">Trang chủ</a></li>
-                        <li class="menu-items"><a href=" ">Bài tập</a></li>
-                        <li class="menu-items"><a href=" ">Tu thân</a></li>
-                        <li class="menu-items"><a href=" ">Dưỡng đạo</a></li>
-                        <li class="menu-items"><a href=" ">Thành nhân</a></li>
-                        <li class="menu-items"><a href=" ">Liên hệ</a></li>
+                    <ul class="menu-items">
+                        <li class="menu-item"><a href="#trang-chu">Trang chủ</a></li>
+                        <li class="menu-item"><a href="#bai-tap">Bài tập</a></li>
+                        <li class="menu-item"><a href="tu-than">Tu thân</a></li>
+                        <li class="menu-item"><a href="duong-dao">Dưỡng đạo</a></li>
+                        <li class="menu-item"><a href="thanh-nhan">Thành nhân</a></li>
+                        <li class="menu-item"><a href="lien-he">Liên hệ</a></li>
                     </ul>  
                 </div>
-            </div>
+
         </div>
     </section>
-    <section class="big-image">
-        <div class="big-image-content">
+    <section class="big-image" id ="trang-chu">
+        <div class="big-image-content" data-aos="fade-up"
+     data-aos-duration="1500">
             <h2>Võ Thị Minh Thục</h2>
             <p>Thế giới này có hai tôi.</p>
             <p> Nửa muốn bôn ba, nửa muốn về Nhà.</p>
-            <button class="big-image-content-btn btn">VỀ NHÀ</button>
+            <button id="ve-nha-btn" class="big-image-content-btn btn">VỀ NHÀ</button>
         </div>
     </section>
-    <section class ="about section-pading">
+    <section class ="about section-pading" id="tu-than">
         <div class="container">
             <div class="row">
                 <div class="section-title">
-                    <h2 data-title="CAU CHUYEN">Tu thân</h2>   
+                    <h2 data-title="Võ Thị Minh Thục">Tự sự</h2>   
                 </div>
             </div>
             <div class="row">
-                <div class="about-item">
-                    <h2>TU DAU CHO BANG TU NHA</h2>
-                    <p>Nghĩ như thế, ta mở được lòng thương xót và lân mẫn, diệt trừ được sự phiền giận của ta và giúp được cho kẻ kia. Người có trí phải nên thực tập như thế. Đây là phương pháp thứ năm, này các bạn: Nếu có một ai đó mà hành động dễ thương, lời nói cũng dễ thương mà tâm ý cũng dễ thương, thì nếu là kẻ trí mà mình lại sinh tâm phiền giận hoặc ganh ghét với kẻ đó thì mình phải nên tìm cách quán chiếu để trừ bỏ cái phiền giận ấy đi. </p>
+                <div class="about-item" data-aos="fade-up-right" data-aos-duration="1500">
+                    <h2>Chúng ta của hiện tại, đều chưa kịp lớn đã phải trưởng thành.</h2>
+                    <p>Lúc còn nhỏ có thể khóc cười tuỳ ý. Trưởng thành rồi mới biết hành động cũng cần nhìn sắc mặt người khác.
+
+Lúc còn nhỏ có thể sống vô tư, vô lo. Trưởng thành rồi mới biết nếu chậm chân hơn người khác, chắc chắn sẽ bị đào thải bất cứ lúc nào.
+
+Lúc còn nhỏ có thể khao khát, mơ mộng. Trưởng thành rồi mới biết thế giới ngoài kia thực sự rất tàn khốc.
+
+Chúng ta đều giống nhau, lúc còn nhỏ đều khao khát trưởng thành. Trưởng thành rồi lại loay hoay học cách trở thành người lớn.</p>
                      <button class="btn">
                         GIA ĐÌNH
                     </button>
                 </div>
-                <div class="aubout-item">
+                <div class="aubout-item" data-aos="fade-up-left" data-aos-duration="1500">
                     <div class="about-item-img">
                         <span>Sơ tâm</span>
-                       <img src="img/anh4.jpg" alt=""> 
+                       <img src="img/anh1.jpg" alt=""> 
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="menu section-pading">
+    <section class="menu section-pading" id="duong-dao">
         <div class="container">
             <div class="row">
                 <div class="section-title">
-                    <h2 data-title="BAI TAP">Qua trinh</h2>   
+                    <h2 data-title="Bài tập">Quá trình</h2>   
                 </div>
             </div>
             <div class="row">
@@ -127,6 +138,142 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             </div>
         </div>
     </section>
+    <section class="phan-hoi section-pading"  id="thanh-nhan">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="Tản mạc">Thì thầm</h2>   
+                </div>
+                <div class="phan-hoi-items">
+                    <div class="phan-hoi-item">
+                        <div class="phan-hoi-item-content">
+                            <div class="phan-hoi-item-img-content-text">
+                                <h2>Thiên Quan Tứ Phúc</h2>
+                                <span>10.10.2022</span>
+                            </div>
+                            <div class="phan-hoi-item-img-content-img">
+                                <img src="img/text1.jpg" alt="">
+                            </div>
+                        </div>   
+                        <p>Tôi là ai? Sự sống của tôi có ý nghĩa gì? Ba trăm năm, nữa liệu có ai còn biết đến sự tồn tại của tôi trên cõi đời này? Tên tuổi của tooi, cuộc đời của tôi có lẽ nào sẽ chìm khuất vào quên lãng? Có người nói với tôi rằng: Phải chăng, sống là tỏa sáng? Chao ôi! Chắc chắn sống là tỏa sáng.</p>
+                        <div class="phan-hoi-item-star">
+                            <i class="fa-regular fa-radio"></i>
+                        </div>
+                    </div> 
+                    <div class="phan-hoi-item">
+                        <div class="phan-hoi-item-content">
+                            <div class="phan-hoi-item-img-content-text">
+                                <h2>Hồng trần như mộng</h2>
+                                <span>Người tỉnh mộng tan</span>
+                            </div>
+                            <div class="phan-hoi-item-img-content-img">
+                                <img src="img/text2.jpg" alt="">
+                            </div>
+                        </div>   
+                        <p> Sống không giận, không hờn, không oán trách
+                            Sống mỉm cười với thử thách chông gai
+                            Sống vươn lên theo kịp ánh ban mai
+                            Sống chan hòa với những người chung sống
+                            Sống là động nhưng lòng luôn bất động
+                            Sống là thương nhưng lòng chẳng vấn vương
+                            Sống yên vui danh lợi mãi coi thường
+                            Tâm bất biến giữa lòng đời vạn biến !</p>
+                        <div class="phan-hoi-item-star">
+                            <i class="fa-regular fa-radio"></i>
+                        </div>
+                    </div>
+                    <div class="phan-hoi-item">
+                        <div class="phan-hoi-item-content">
+                            <div class="phan-hoi-item-img-content-text">
+                                <h2>Nhân sinh như kịch</h2>
+                                <span>Người tẩn kịch tàn</span>
+                            </div>
+                            <div class="phan-hoi-item-img-content-img">
+                                <img src="img/text3.jpg" alt="">
+                            </div>
+                        </div>   
+                        <p>Đất ấp ôm cho mọi hạt nảy mầm
+                        Những chồi non tự vươn lên tìm ánh sáng
+                        Nếu tất cả đường đời đều trơn láng
+                        Chắc gì ta đã nhận ra ta
+                        Ai trong đời cũng có thể tiến xa
+                        Nếu có khả năng tự mình đứng dậy
+                        Hạnh phúc cũng như bầu trời này vậy
+                        Không chỉ dành cho một riêng ai!</p>
+                        <div class="phan-hoi-item-star">
+                            <i class="fab fa-radio"></i>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team section-pading" id="duong-dao">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="Dưỡng Đạo">Gia đình</h2>   
+                </div>
+            </div>
+            <div class="row">
+                <div class="team-items">
+                    <img src="img/giadinh1.JPG" alt="alt">
+                    <div class="team-items-text">
+                        <h2>3-4-5</h2>
+                        <span>Chị chị em em</span>
+                    </div>
+                </div>
+                <div class="team-items">
+                    <img src="img/giadinh2.JPG" alt="alt">
+                    <div class="team-items-text">
+                        <h2>Ba và Mẹ</h2>
+                        <span>1314</span>
+                    </div>
+                </div>
+                <div class="team-items">
+                    <img src="img/giadinh3.JPG" alt="alt">
+                    <div class="team-items-text">
+                        <h2>Ba và hai</h2>
+                        <span>mmmmmmm</span>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </section>
+    <section class="footer" id="lien-he">
+        <div class="footer-bg"> 
+ 
+        </div>
+        <div class="container">
+            <div class="row justify-content">
+                <div class="footer-item">
+                    <h2>Địa chỉ</h2>   
+                    <p>An Cường, Bình Hải<br> Bình Sơn, Quảng Ngãi</p>
+                </div>
+                <div class="footer-item">
+                    <h2>Bài quá trình</h2>   
+                    <p>Võ Thị Minh Thục<br> Web cá nhân</p>
+                </div>
+                <div class="footer-item">
+                    <h2>Liên hệ</h2>   
+                    <p>Phone: 0365700187<br> Email: vominhthuc@gmail.com</p>
+                    <div class="footer-social">
+                        <i class="fab fa-facebook"></i> 
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Bản quyền thuộc về Minh Thục</p>
+        </div>
+    </section>
+    
     <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -12,18 +12,57 @@ window.addEventListener("scroll", function(){
     const x = this.pageYOffset;
     if(x>80){toP.classList.add("active")}
     else{toP.classList.remove("active")}
-})     
-const menuTitle = document.querySelector(".menu-title");
-menuTitle.addEventListener("click",function(x){
-    if(x.target.classList.contains("menu-button")){
-        const Target = x.target.getAttribute("data-title");
-        //console.log(Target)
-        menuTitle.querySelector(".acvite").classList.remove("active");
-        x.target.classList.add("active");
-        
-        const menuItem = document.querySelector(".menu");
-        menuItem.querySelector(".menu-item-content active").classList.remove("active");
-        menuItem.querySelector(Target).classList.add("active");
-    }
-})
+}) 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const menuItems = document.querySelectorAll(".menu-item");
+  
+  menuItems.forEach((menuItem) => {
+    menuItem.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const targetSectionId = this.querySelector("a").getAttribute("href").replace("#", "");
+      const targetSection = document.getElementById(targetSectionId);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+
+      const menuBar = document.querySelector(".menu-bar");
+      const menuItems = document.querySelector(".menu-items");
+      menuBar.classList.remove("active");
+      menuItems.classList.remove("active");
+    });
+  });
+});
+
+
+const menuButtons = document.querySelectorAll(".menu-button");
+
+menuButtons.forEach(menuButton => {
+    menuButton.addEventListener("click", (x) => {
+        const target = x.target.getAttribute("data-title");
+
+        // Remove "active" class from all menu buttons
+        menuButtons.forEach(button => button.classList.remove("active"));
+        // Add "active" class to the clicked menu button
+        x.target.classList.add("active");
+
+        const menuItem = document.querySelector(".menu");
+        // Remove "active" class from all menu items
+        menuItem.querySelectorAll(".menu-item-content.active").forEach(item => item.classList.remove("active"));
+        // Add "active" class to the corresponding menu item
+        menuItem.querySelector(target).classList.add("active");
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const veNhaBtn = document.getElementById("ve-nha-btn");
+
+    veNhaBtn.addEventListener("click", function () {
+        window.location.href = "venha.html";
+
+    });
+});
