@@ -1,0 +1,28 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 8, 2023, 10:39:57 PM
+    Author     : Admin
+*/
+
+@media (max-width: 768px){
+    .top{
+        padding: 0 12px;
+    }
+    .about-item{
+        width: 100%;
+    }
+    .food-items{
+        width: 100%;
+    }
+    .phan-hoi-item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .team-items{
+        width: 100%;
+        margin-bottom: 40px; 
+    }
+}
